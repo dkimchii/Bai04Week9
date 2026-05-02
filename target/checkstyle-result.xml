@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="10.12.4">
-<file name="D:\hocjava\week9\Bai02\src\main\java\com\banksystem\Account.java">
-</file>
-<file name="D:\hocjava\week9\Bai02\src\main\java\com\banksystem\Bank.java">
-</file>
-<file name="D:\hocjava\week9\Bai02\src\main\java\com\banksystem\BankException.java">
-</file>
-<file name="D:\hocjava\week9\Bai02\src\main\java\com\banksystem\CheckingAccount.java">
-</file>
-<file name="D:\hocjava\week9\Bai02\src\main\java\com\banksystem\Customer.java">
-</file>
-<file name="D:\hocjava\week9\Bai02\src\main\java\com\banksystem\InsufficientFundsException.java">
-</file>
-<file name="D:\hocjava\week9\Bai02\src\main\java\com\banksystem\InvalidFundingAmountException.java">
-</file>
-<file name="D:\hocjava\week9\Bai02\src\main\java\com\banksystem\SavingsAccount.java">
-</file>
-<file name="D:\hocjava\week9\Bai02\src\main\java\com\banksystem\Transaction.java">
-</file>
-<file name="D:\hocjava\week9\Bai02\src\test\java\com\banksystem\BankSystemTest.java">
+<file name="D:\DoKimChi_25021667_Week9\Bai04\src\test\java\com\banksystem\com\banksystem\PathTest.java">
+<error line="7" column="1" severity="warning" message="Extra separation in import group before &apos;org.junit.jupiter.api.Test&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Import statement for &apos;org.junit.jupiter.api.Assertions.assertTrue&apos; is in the wrong order. Should be in the &apos;STATIC&apos; group, expecting not assigned imports on this line." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="16" column="5" severity="warning" message="&apos;method def modifier&apos; has incorrect indentation level 4, expected level should be 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="19" column="9" severity="warning" message="&apos;method def&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="20" column="9" severity="warning" message="&apos;method def&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="27" column="9" severity="warning" message="&apos;method def&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="28" column="5" severity="warning" message="&apos;method def rcurly&apos; has incorrect indentation level 4, expected level should be 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
 </checkstyle>

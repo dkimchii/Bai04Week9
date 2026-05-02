@@ -11,6 +11,8 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     strategy:
+      fail-fast: false
+
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
 
@@ -24,5 +26,8 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: Build with Maven
+        run: mvn -B clean install
+
       - name: Run tests
-        run: mvn test
+        run: mvn -B test
