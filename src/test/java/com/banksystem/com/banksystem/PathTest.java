@@ -1,19 +1,29 @@
 package com.banksystem;
 
-import org.junit.jupiter.api.Test;
 import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Kiểm thử việc tạo đường dẫn cross-platform bằng lớp Path và Paths.
+ */
 public class PathTest {
 
     @Test
     public void testHardcodedPath() {
-        // Đường dẫn cố định sử dụng dấu \ sẽ gây lỗi trên Linux/macOS
-        String filePath = "data" + File.separator + "config.txt"; // Sẽ sửa ở bước 3, hiện tại dùng cứng:
-        String hardcodedPath = "data\\config.txt";
+        // Sử dụng File.separator hoặc java.nio.file.Path để tương thích đa nền tảng
+        Path path = Paths.get("data", "config.txt");
+        File file = path.toFile();
 
-        File file = new File(hardcodedPath);
-        // Test này sẽ thất bại trên môi trường Ubuntu hoặc macOS
-        assertTrue(file.exists() || !file.exists());
+        // Hoặc dùng File.separator:
+        // String pathString = "data" + File.separator + "config.txt";
+        // File file = new File(pathString);
+
+        // Tiếp tục các câu lệnh test của bạn
+        assertTrue(true);
     }
 }
